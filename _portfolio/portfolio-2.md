@@ -12,5 +12,3 @@ Up to the date of writing this thesis, searching for Neural Machine Translation 
 The results prove that limiting segment length and the character difference between source and target segments, and removing untranslated and foreign language segments enhance the translations of the trained engines. 
 
 Nonetheless, automatic evaluation metrics and a manual assessment agree that when all cleaning methods are applied, the outcome is confusing and, at times, lacks information from the source segment.
-
-### 
