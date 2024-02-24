@@ -3,3 +3,15 @@ _site/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
+
+# Ignore OG files that I'll replace or files I won't need
+READMEOG.md
+_teaching/
+_publications/
+_talks/
+_pages/cv.md
+_pages/archive-layout-with-content.md
+_pages/markdown.md
+talkmap.ipynb
+talkmap.py
+_data/authors.yml
