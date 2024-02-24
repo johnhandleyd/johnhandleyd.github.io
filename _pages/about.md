@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-🧑🏻‍💻 Junior NLP Developer with a background in Translation (🇪🇸, 🇬🇧, 🇫🇷). Passionate about joining the best of both worlds using the latest technologic advancements.
+🧑🏻‍💻 Junior NLP Developer with a background in Translation (🇪🇸, 🇬🇧, 🇫🇷). Passionate about joining the best of both worlds using the latest technological advancements.
 
 💭 What draws me the most about NLP is its investigative nature and the limitless possibilities to help, from unsupervised machine translation engines that target low-resource languages to well-curated speech assistants.
 
