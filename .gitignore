@@ -15,3 +15,5 @@ _pages/markdown.md
 talkmap.ipynb
 talkmap.py
 _data/authors.yml
+
+.context/

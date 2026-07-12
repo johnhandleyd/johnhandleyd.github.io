@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>john handley</title>
+<meta name="description" content="john handley -> AI engineer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="wordmark">john handley</a>
+    <nav>
+      <a href="projects.html">projects</a>
+      <a href="files/cv.html">cv</a>
+      <a href="mailto:john@johnhandleyd.com">contact</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <h2>ai engineer @ Minsait (Indra)</h2>
+    <p class="hero-sub">technical lead experienced in client-facing delivery, with a track record in production LLM systems, agentic AI, and Retrieval-Augmented Generation (RAG).</p>
+    <p class="hero-sub"style="margin-top: 1em;">interested in: machine learning, geospatial data, environmental solutions, farming, and more.</p>
+  </section>
+
+  <section class="work wrap">
+    <p class="eyebrow">projects</p>
+    <ul class="project-list">
+      <li>
+        <a href="projects.html#sea-ice" class="proj-title">Antarctic sea ice concentration from Sentinel-2</a>
+        <span class="proj-tag">in progress</span>
+      </li>
+      <li>
+        <a href="projects.html#thesis" class="proj-title">Impact of noise in neural machine translation</a>
+        <span class="proj-tag">MSc thesis, 2022</span>
+      </li>
+    </ul>
+    <a href="projects.html" class="all-projects">all projects &rarr;</a>
+  </section>
+
+  <section class="certs wrap">
+    <p class="eyebrow">Certifications</p>
+    <ul class="cert-list">
+      <li>Azure AI Fundamentals &mdash; <span>Microsoft, 2025</span></li>
+      <li>Neo4j Certified Professional &mdash; <span>Neo4j, 2025</span></li>
+    </ul>
+  </section>
+
+  <section class="contact wrap">
+    <div class="contact-row">
+      <a href="mailto:john@johnhandleyd.com" class="contact-email">john@johnhandleyd.com</a>
+      <a href="https://github.com/johnhandleyd">GitHub</a>
+      <a href="https://linkedin.com/in/john-handley">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>john handley</p>
+</footer>
+
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function(){
+    var curr = document.documentElement.getAttribute('data-theme');
+    var next = curr === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+</script>
+</body>
+</html>

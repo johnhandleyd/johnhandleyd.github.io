@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    text {
+      fill: #14181C;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    @media (prefers-color-scheme: dark) { text { fill: #E4E8EB; } }
+  </style>
+  <text x="4" y="22">jh</text>
+</svg>
