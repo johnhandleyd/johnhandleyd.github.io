@@ -302,6 +302,18 @@ nav a:hover { color: var(--txt); text-decoration: none; }
   text-decoration: none;
 }
 
+/* ── Project figures (theme-aware) ────── */
+.proj-fig { margin: 18px 0 24px; }
+/* width/height only — do NOT set display here. It has higher specificity
+   (class+element) than .img-light/.img-dark below and would silently
+   override the theme toggle regardless of source order. */
+.proj-fig img { width: 140%; max-width: 230px; height: auto; border: 1px solid var(--bdr); }
+
+.img-dark { display: none; }
+.img-light { display: block; }
+:root[data-theme="dark"] .img-dark { display: block; }
+:root[data-theme="dark"] .img-light { display: none; }
+
 /* ── Responsive ───────────────────────── */
 @media (max-width: 600px) {
   .hero { padding-top: 52px; padding-bottom: 48px; }

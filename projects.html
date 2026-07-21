@@ -38,11 +38,17 @@
     </div>
 
     <article class="proj-article" id="sea-ice">
-      <span class="coord">63.7833° S, 171.2000° E &mdash; McMurdo Sound</span>
       <h2>Antarctic sea ice concentration from Sentinel-2</h2>
-      <p class="proj-desc">A weakly-supervised regression model that predicts sea ice concentration at 10m resolution from Sentinel-2 L2A optical imagery, trained against AMSR2 passive microwave data at 12.5km resolution. The goal is downscaling: revealing floe boundaries, leads, and melt ponds that the coarse passive microwave grid cannot resolve. ResNet18 backbone with a regression head, trained on the austral shoulder season in McMurdo Sound.</p>
+      <span class="coord">63.7833° S, 171.2000° E &mdash; McMurdo Sound</span>
+      <p class="proj-desc">A weakly-supervised regression model that predicts sea ice concentration at 10m resolution from Sentinel-2 L2A optical imagery, trained against AMSR2 passive microwave data at 12.5km resolution. The goal is downscaling scenes into patches: revealing floe boundaries, leads, and melt ponds that the coarse passive microwave grid cannot resolve. ResNet18 as the backbone with a regression head, trained on the austral shoulder season in McMurdo Sound.</p>
       <p class="proj-meta"><span class="ml">model</span> ResNet18 &middot; <span class="ml">stack</span> Python, PyTorch, rasterio &middot; ongoing</p>
-      <a href="https://github.com/johnhandleyd/waddle" class="proj-link">GitHub &rarr;</a>
+
+      <figure class="proj-fig">
+        <img class="img-light" src="images/sea-ice/prediction_montage.gif" alt="Animated montage of model predictions on real Sentinel-2 patches, comparing true and predicted sea ice concentration">
+        <img class="img-dark" src="images/sea-ice/prediction_montage_dark.gif" alt="Animated montage of model predictions on real Sentinel-2 patches, comparing true and predicted sea ice concentration">
+      </figure>
+
+      <a href="https://github.com/johnhandleyd/waddle" class="proj-link">see on GitHub &rarr;</a>
     </article>
 
     <article class="proj-article" id="thesis">
