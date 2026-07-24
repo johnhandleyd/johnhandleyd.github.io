@@ -71,12 +71,13 @@
     .job-date { font-size: 11px; color: #8896a8; white-space: nowrap; flex-shrink: 0; }
     .job-sub { font-size: 10px; color: #7a8898; font-style: italic; margin: 5px 0 3px; }
     .job-bullets { font-size: 14px; color: #2d3748; line-height: 1.55; }
-
+    
     /* Skills */
     .skills-text { font-size: 13.5px; color: #2d3748; line-height: 1.65; }
-
+    
     /* Projects */
     .projects-text { font-size: 13.5px; color: #2d3748; line-height: 1.6; }
+    .projects-sub { font-size: 10px; color: #7a8898; font-style: italic; margin: 5px 0 3px; }
 
     /* Education */
     .edu-row { display: flex; justify-content: space-between; gap: 16px; font-size: 13.5px; color: #2d3748; line-height: 1.7; }
@@ -87,6 +88,7 @@
       body { background: white; padding: 0; }
       .toolbar { display: none; }
       .page { box-shadow: none; }
+      a { color: inherit; text-decoration: none; }
     }
   </style>
 </head>
@@ -98,14 +100,14 @@
   <div class="name">JOHN HANDLEY DERECHO</div>
   <div class="title">AI Engineer</div>
   <div class="contact">
-    <a href="mailto:translatjohn@gmail.com">translatjohn@gmail.com</a>  ·  +34 670 087 316  ·  <a href="https://linkedin.com/in/john-handley">linkedin.com/in/john-handley</a>  ·  <a href="https://github.com/johnhandleyd">github.com/johnhandleyd</a>
+    <a href="mailto:john@johnhandleyd.com">john@johnhandleyd.com</a>  ·  +34 670 087 316  ·  <a href="https://johnhandleyd.com">johnhandleyd.com</a>  ·  <a href="https://linkedin.com/in/john-handley">linkedin.com/in/john-handley</a>  ·  <a href="https://github.com/johnhandleyd">github.com/johnhandleyd</a>
   </div>
 
   <!-- PROFILE -->
   <div class="section">
     <div class="section-label">Profile</div>
     <div class="profile-text">
-      Technical lead experienced in client-facing delivery, with a track record in production LLM systems, agentic AI, and Retrieval-Augmented Generation (RAG). Hands-on Python developer comfortable owning architecture end-to-end. Open to relocation to Sweden.
+      Technical lead experienced in client-facing delivery, with a track record in production LLM systems, agentic AI, and Retrieval-Augmented Generation (RAG). Hands-on Python developer comfortable owning architecture end-to-end.
     </div>
     <div class="languages">
       <strong>Languages:</strong>&nbsp; Spanish (native) &nbsp;·&nbsp; English (C2) &nbsp;·&nbsp; Swedish (A1) &nbsp;·&nbsp; French (A2)
@@ -149,7 +151,7 @@
     <div class="section-label">Skills</div>
     <div class="skills-text">
       <strong>Programming:</strong> Python (OOP, async, APIs), Bash/Linux, Git, CI/CD, architecture prototyping<br>
-      <strong>AI &amp; ML:</strong> LLMs (OpenAI, Ollama), LangGraph, CrewAI, RAG, NLP (spaCy, HuggingFace), Dialogflow CX, scikit-learn, PyTorch, TensorFlow, MLFlow, LLM-as-a-Judge, MCP<br>
+      <strong>AI &amp; ML:</strong> LLMs (OpenAI, Ollama), LangGraph, CrewAI, RAG, NLP (spaCy, HuggingFace), Dialogflow CX, scikit-learn, PyTorch, MLFlow, LLM-as-a-Judge, MCP<br>
       <strong>Data &amp; Storage:</strong> Neo4j, Cosmos DB, PostgreSQL, SQL, ETL pipelines, vector search (Qdrant, Azure AI Search)<br>
       <strong>Cloud &amp; Infra:</strong> Azure (DevOps, Key Vault, AI Search, Blob), Docker, Google Cloud, Agile (Scrum, Jira); Linux<br>
       <strong>Certifications:</strong> Azure AI Fundamentals (AI-900)
@@ -160,7 +162,9 @@
   <div class="section">
     <div class="section-label">Projects</div>
     <div class="projects-text">
-      • <strong>Satellite Imagery Classifier (in progress):</strong> Sentinel-2 data, Python; Ice imaging processing<br>
+      • <strong>Antarctic Sea Ice Concentration from Sentinel-2</strong>
+      <div class="job-sub" style="margin-top:0.5px;">Python &nbsp;·&nbsp; PyTorch &nbsp;·&nbsp; rasterio</div>
+      Weakly supervised regression (fine-tuned ResNet18): trained against coarse AMSR2 sea ice concentration labels (12.5 km) to predict per-patch SIC from Sentinel-2 L2A imagery at 10 m (2.56 km patches), resolving sub-grid-cell ice structure beyond AMSR2's native resolution.<br>
       • <strong>Master's Thesis:</strong> Trained transformer models on 1.8M+ Wikipedia segments to analyse the effect of training data on neural machine translation quality
     </div>
   </div>
